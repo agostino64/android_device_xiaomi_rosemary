@@ -68,13 +68,15 @@ PRODUCT_PACKAGES += \
     audio_policy.stub \
     libalsautils \
     libaudiofoundation.vendor \
+    libunwindstack.vendor \
     libavservices_minijail.vendor \
 
 PRODUCT_PACKAGES += \
     libalsautils_legacy \
     libtinycompress \
     libtinyxml \
-    tinymix
+    tinymix \
+    libsqlite.vendor
 
 PRODUCT_PACKAGES += \
     MtkInCallService
@@ -110,19 +112,13 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.common@1.0.vendor \
-    android.hardware.camera.device@1.0.vendor \
-    android.hardware.camera.device@3.2.vendor \
-    android.hardware.camera.device@3.3.vendor \
-    android.hardware.camera.device@3.4.vendor \
-    android.hardware.camera.device@3.5.vendor \
     android.hardware.camera.device@3.6.vendor \
-    android.hardware.camera.provider@2.4.vendor \
-    android.hardware.camera.provider@2.5.vendor \
     android.hardware.camera.provider@2.6.vendor
 
 PRODUCT_PACKAGES += \
-    libdng_sdk.vendor
+    libdng_sdk.vendor \
+    libcamera_metadata.vendor \
+    libpng.vendor
 
 # CAS
 PRODUCT_PACKAGES += \
@@ -144,7 +140,8 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0.vendor \
     libdrm.vendor \
     libdrm \
-    libutils-v32
+    libutils-v32 \
+    libutilscallstack.vendor
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.common-V2-ndk.vendor
@@ -197,6 +194,10 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss.measurement_corrections@1.1.vendor \
     android.hardware.gnss.visibility_control@1.0.vendor \
     android.hardware.gnss-V1-ndk.vendor
+
+PRODUCT_PACKAGES += \
+    libcurl.vendor \
+    libexpat.vendor
 
 # IFAA manager
 PRODUCT_PACKAGES += \
