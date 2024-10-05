@@ -317,6 +317,9 @@ vendor.display.enable_optimize_refresh=1
 ro.surface_flinger.set_idle_timer_ms=250
 ro.surface_flinger.set_touch_timer_ms=300
 
+# Surface Flinger
+ro.sf.blurs_are_expensive=1
+
 # TEE
 ro.vendor.mtk_tee_gp_support=1
 ro.hardware.kmsetkey=beanpod
