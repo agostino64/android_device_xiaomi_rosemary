@@ -91,7 +91,7 @@ function blob_fixup {
         vendor/lib*/librgbwlightsensor.so)
             "$PATCHELF" --add-needed "libshim_sensors.so" "$2"
             ;;
-        vendor/lib*/hw/vendor.mediatek.hardware.pq@2.13-impl.so)
+        vendor/lib*/hw/vendor.mediatek.hardware.pq@2.15-impl.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
         vendor/lib64/libgf_hal.so)
