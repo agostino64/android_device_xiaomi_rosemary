@@ -228,6 +228,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0.vendor \
     android.hardware.keymaster@4.0.vendor \
+    android.hardware.keymaster@4.1.vendor \
+    android.system.keystore2-V1-ndk \
     libkeymaster4.vendor \
     libkeymaster41.vendor \
     libkeymaster4_1support.vendor \
@@ -235,6 +237,10 @@ PRODUCT_PACKAGES += \
     libkeymaster_messages.vendor \
     libkeymaster_portable.vendor \
     libpuresoftkeymasterdevice.vendor
+
+# Keystore
+PRODUCT_PACKAGES += \
+    android.system.keystore2
 
 # Health
 PRODUCT_PACKAGES += \
